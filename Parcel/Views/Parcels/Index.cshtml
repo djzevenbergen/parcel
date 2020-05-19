@@ -1,14 +1,11 @@
-@using ToDoList.Models;
+@using Parcel.Models;
 
-<h1>To Do List</h1>
-@if (Model.Count == 0)
-{
-<p>There are no items in the list.</p>
-}
-<ul>
-  @foreach (Item item in Model)
-  {
-  <li>@item.Description</li>
-  }
-</ul>
-<a href="/items/new">Add a new item.</a>
+<h1>Your package</h1>
+<p>Package height: @Model.Height</p>
+<p>Package width: @Model.Width</p>
+<p>Package depth: @Model.Depth</p>
+<p>Package weight: @Model.Weight</p>
+<p>Shipping will cost: $@Model.Cost</p>
+<p>The volume is: @Model.Volume inches^3</p>
+
+<a href="/">Home.</a>

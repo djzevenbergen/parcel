@@ -11,6 +11,7 @@ namespace Parcel.Models
     public double Cost { get; set; }
     public double Volume { get; set; }
 
+
     public Estimator(double height, double width, double depth, double weight)
     {
       Height = height;

@@ -4,14 +4,8 @@ using System.Collections.Generic;
 
 namespace Parcel.Controllers
 {
-  public class ItemsController : Controller
+  public class ParcelsController : Controller
   {
-    [HttpGet("/items")]
-    public ActionResult Index()
-    {
-      List<Item> allItems = Item.GetAll();
-      return View(allItems);
-    }
 
     [HttpGet("/parcels/estimate")]
     public ActionResult CreateForm()
@@ -23,8 +17,15 @@ namespace Parcel.Controllers
     public ActionResult Estimate(double height, double width, double depth, double weight)
     {
       Estimator myParcel = new Estimator(height, width, depth, weight);
-      return RedirectToAction("Index");
+      myParcel.VolumeCalc();
+      return View("Index", myParcel);
     }
 
+    [HttpGet("/index")]
+    public ActionResult Index()
+    {
+      Estimator testParcel = new Estimator(0, 0, 0, 0);
+      return View(testParcel);
+    }
   }
 }
