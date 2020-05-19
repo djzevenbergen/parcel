@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using Parcel.Models;
 using System.Collections.Generic;
 
-namespace ToDoList.Controllers
+namespace Parcel.Controllers
 {
   public class ItemsController : Controller
   {
@@ -13,16 +13,16 @@ namespace ToDoList.Controllers
       return View(allItems);
     }
 
-    [HttpGet("/items/new")]
+    [HttpGet("/parcels/estimate")]
     public ActionResult CreateForm()
     {
       return View();
     }
 
-    [HttpPost("/items")]
-    public ActionResult Create(string description)
+    [HttpPost("/parcels")]
+    public ActionResult Estimate(double height, double width, double depth, double weight)
     {
-      Item myItem = new Item(description);
+      Parcel myParcel = new Parcel(height, width, depth, weight);
       return RedirectToAction("Index");
     }
 

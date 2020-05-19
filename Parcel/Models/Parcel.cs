@@ -1,14 +1,16 @@
 using System.Collections.Generic;
 
-namespace ToDoList.Models
+namespace Parcel.Models
 {
-  public class Item
+  public class Parcel
   {
-    public string Description { get; set; }
-    public int Priority { get; set; }
-    private static List<Item> _instances = new List<Item> { };
+    public double Height { get; set; }
+    public double Width { get; set; }
+    public double Depth { get; set; }
+    public double Weight { get; set; }
+    private static List<Parcel> _instances = new List<Parcel> { };
 
-    public static List<Item> GetAll()
+    public static List<Parcel> GetAll()
     {
       return _instances;
     }

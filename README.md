@@ -2,11 +2,11 @@
 
 #### _Epicodus Project May 12, 2020_
 
-#### By _**Jessica Hvozdovich, DJ Zevenbergen, and Julia Seidman**_
+#### By _**DJ Zevenbergen & KhanSahab**_
 
 ## Description
 
-_A project to introduce the C# language and the .NET Core framework. The console application will take user input to display goals and descriptions. The lesson is meant to practice creating automated testing methods using MSTest and behavior driven development._
+_A project to introduce the C# language and the .NET Core framework using MVC. The application will take user input to calculate the volume and shipping cost of a package._
 
 ## Setup/Installation Requirements
 
@@ -22,8 +22,7 @@ There are no known bugs at the time of this update.
  
 ## Support and contact details
 
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/jhvozdovich/to-do-list-1) here on GitHub._
-
+_Have a bug or an issue with this application? Open an issue
 ## Technologies Used
 
 * C#
@@ -33,12 +32,10 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 ### Specs
 | Spec | Input | Output |
 | :------------- | :------------- | :------------- |
-| **User can add a to do list item** | User Input:”walk dog” | Output: "added to list" |
-| **User can multiple items to a do list item** | User Input:”walk dog, weed garden” | Output: "items added to list" |
-| **User can view to do list** | User Input: "View List” | Output: "walk dog, weed garden, view cat" |
+| **User can add the height, width, depth, and weight of package** | User Input:”2, 2, 2, 5” | Output: "The package has a volume of 8 inch^3 and will cost $13 to ship" |
 
 ### License
 
 This software is licensed under the MIT license.
 
-Copyright (c) 2020 **_Jessica Hvozdovich, DJ Zevenbergen, and Julia Seidman_**
+Copyright (c) 2020 **_DJ Zevenbergen & KhanSahab_**
