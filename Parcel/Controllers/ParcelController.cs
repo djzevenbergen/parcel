@@ -22,7 +22,7 @@ namespace Parcel.Controllers
     [HttpPost("/parcels")]
     public ActionResult Estimate(double height, double width, double depth, double weight)
     {
-      Parcel myParcel = new Parcel(height, width, depth, weight);
+      Estimator myParcel = new Estimator(height, width, depth, weight);
       return RedirectToAction("Index");
     }
 
